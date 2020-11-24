@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'users/create'
+  # 
+
+  # travel info routes
+  resources :travel_informations
+  get "/travel-information", to: "travel_informations#index"
+  post "/new-travel-information", to: "travel_informations#create"
+  put "/travel_informations/:id", to: "travel_informations#update"
+  delete "/travel_informations/:id", to: "travel_informations#destroy"
+
+  # users route
   resource :users, only: [:create]
    post "/login", to: "auth#login"
    get "/auto_login", to: "auth#auto_login"

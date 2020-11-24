@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  departure: MyString
+  destination: MyString
+  bus_type: MyString
+  bus_company: MyString
+  price: 1
+  travel_date: MyString
+  travel_time: MyString
+
+two:
+  departure: MyString
+  destination: MyString
+  bus_type: MyString
+  bus_company: MyString
+  price: 1
+  travel_date: MyString
+  travel_time: MyString
