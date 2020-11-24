@@ -8,6 +8,11 @@ class TravelInformationsController < ApplicationController
     render json: @travel_informations
   end
 
+  def search
+    @travel_informations = TravelInformation.where(departure: params[:departure], destination: params[:destination], travel_date: params[:travel_date])
+    render json: @travel_informations
+  end
+
   # GET /travel_informations/1
   def show
     render json: @travel_information
