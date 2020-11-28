@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
 
   # search route
+  get "/booking-history", to: "bookings#search"
+
+  resources :bookings
+  get "/bookings", to: "bookings#index"
+  post "/book-ticket", to: "bookings#create"
+
+  # search route
   get "/travel-information/search", to: "travel_informations#search"
 
   # travel info routes

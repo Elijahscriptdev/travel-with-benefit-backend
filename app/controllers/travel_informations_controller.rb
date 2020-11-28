@@ -1,5 +1,6 @@
 class TravelInformationsController < ApplicationController
   before_action :set_travel_information, only: %i[show update destroy]
+  skip_before_action :require_login, only: %i[index search show]
 
   # GET /travel_informations
   def index
