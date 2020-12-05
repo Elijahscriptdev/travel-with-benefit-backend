@@ -1,0 +1,48 @@
+.background{
+    background: #F0F2F6;
+    height: 100%;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.box{
+    font-weight: 14px!important;
+}
+
+input[type="text" i] {
+    padding: 0!important;
+    width: 100%;
+    /* border: none!important; */
+}
+
+@media screen and (max-width: 768px){
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .box{
+        font-weight: 12px!important;
+    }
+}
+
+@media screen and (max-width: 458px){
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+
+.box label{
+    border: 1px solid #d6d8db;
+    padding: 3px;
+    width: 100%;
+    background: #F0F2F6;
+}
+
+.btn-list{
+    width: 100%;
+}

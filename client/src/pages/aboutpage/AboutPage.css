@@ -1,0 +1,17 @@
+.jumbotron {
+  background: linear-gradient(rgba(24, 23, 23, 0.45), rgba(15, 6, 6, 0.45)),
+    url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1605813472/fas-khan-fG_6H0URdos-unsplash_ykkp3y.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  /* color: #ff7f00; */
+}
+
+.card-color {
+  background: #f1f1f1 !important;
+  border: none;
+}
+
+.service {
+  margin: 60px auto 80px !important;
+}

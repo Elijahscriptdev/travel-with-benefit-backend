@@ -1,0 +1,12 @@
+.ticket{
+    height: 50vh;
+    /* background: ghostwhite; */
+}
+
+.mt{
+    margin: 200px auto;
+    padding: 40px 0;
+    background-color: rgb(48, 107, 48);
+    color: #fff;
+    width: 300px;
+}

@@ -1,0 +1,82 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+}
+
+.one {
+  background: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1605813472/fas-khan-fG_6H0URdos-unsplash_ykkp3y.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.two {
+  background: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1605813064/narciso-arellano-773s0MrPTMA-unsplash_sxmnmy.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.three {
+  background: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1605813063/lynda-hinton-qUb4_r8Macg-unsplash_xwktky.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.four {
+  background: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1605813062/jorge-sa-Tri_u7qeqGw-unsplash_z3jjis.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.five {
+  background: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1605813060/cedric-blondeau-n9-fnypa6U0-unsplash_h8oila.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.six {
+  background: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1605833087/jennifer-molina-VXjtbGjPEUQ-unsplash_mbl1ve.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+  }
+}
+
+button.rec-dot {
+  background-color: #ff7f00;
+  box-shadow: 0 0 1px 3px rgba(235, 16, 16, 0.5);
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+  box-shadow: 0 0 1px 3px #ff7f00;
+}
+
+button.rec-arrow {
+  background-color: #ff7f00;
+  color: #fff;
+}
+
+button.rec-arrow :hover,
+button.rec-arrow :active,
+button.rec-arrow :focus {
+  box-shadow: 0 0 1px 3px #ff7f00;
+  background-color: #c75b03 !important;
+}
