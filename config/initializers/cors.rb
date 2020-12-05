@@ -23,7 +23,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     end
 
     allow do
-      origins "https://travelwithbenefit.herokuapp.com"
+      origins "https://serene-jepsen-7b0096.netlify.app"
       resource "*", headers: :any, methods: [
           :get, :post, :put, :patch, :delete, :options, :head
       ],
