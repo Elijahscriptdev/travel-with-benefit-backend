@@ -5,28 +5,38 @@
 
 # Read more: https://github.com/cyu/rack-cors
 
-Rails.application.config.middleware.insert_before 0, Rack::Cors do
-    allow do
-      origins '*'
+# Rails.application.config.middleware.insert_before 0, Rack::Cors do
+#     allow do
+#       origins '*'
   
-      resource '*',
-        headers: :any,
-        methods: [:get, :post, :put, :patch, :delete, :options, :head]
-    end
+#       resource '*',
+#         headers: :any,
+#         methods: [:get, :post, :put, :patch, :delete, :options, :head]
+#     end
   
-    allow do
-      origins "http://localhost:3000"
-      resource "*", headers: :any, methods: [
-          :get, :post, :put, :patch, :delete, :options, :head
-      ],
-      credentials: true
-    end
+#     allow do
+#       origins "http://localhost:3000"
+#       resource "*", headers: :any, methods: [
+#           :get, :post, :put, :patch, :delete, :options, :head
+#       ],
+#       credentials: true
+#     end
 
-    allow do
-      origins "https://serene-jepsen-7b0096.netlify.app"
-      resource "*", headers: :any, methods: [
-          :get, :post, :put, :patch, :delete, :options, :head
-      ],
-      credentials: true
-    end
+#     allow do
+#       origins "https://serene-jepsen-7b0096.netlify.app"
+#       resource "*", headers: :any, methods: [
+#           :get, :post, :put, :patch, :delete, :options, :head
+#       ],
+#       credentials: true
+#     end
+#   end
+
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins '*'
+
+    resource '*',
+            headers: :any,
+            methods: %i[get post put patch delete options head]
   end
+end
