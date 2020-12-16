@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   # search route
   get "/booking-history", to: "bookings#search"
+  get "/booking-info", to: "bookings#search_info"
 
   resources :bookings
   get "/bookings", to: "bookings#index"
