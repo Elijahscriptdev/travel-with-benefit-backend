@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: %i[show update destroy]
-  skip_before_action :require_login, only: %i[index search show create]
+  skip_before_action :require_login, only: %i[index search search_info show create]
 
   # GET /bookings
   def index
