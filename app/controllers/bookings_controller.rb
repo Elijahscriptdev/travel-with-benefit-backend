@@ -10,7 +10,7 @@ class BookingsController < ApplicationController
   end
 
   def search
-    @bookings = Booking.where(booking_ref: params[:booking_ref])
+    @bookings = Booking.where(booking_ref: params[:booking_ref]) || Booking.where( email: params[:email])
     render json: @bookings
   end
 
